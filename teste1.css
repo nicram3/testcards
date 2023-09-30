@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+html {
+    font-family: Poppins;
+    background: #212121;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    border-spacing: 0 0;
+    color:white;
+    text-align: center;
+}
+
+.card {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 4px;
+    background:#212121;
+    display: flex;
+    gap: 5px;
+    padding: 30px;
+  }
+
+  .card p {
+    filter:none;
+    opacity: 20%;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    border: 2px solid #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .op1 {
+    background-image: 
+        linear-gradient(black,black),
+        url("bg1.jpg");
+    background-blend-mode: saturation;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .op2 {
+    background-image: 
+        linear-gradient(black,black),
+        url("bg2.jpg");
+    background-blend-mode: saturation;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .op3 {
+    background-image: 
+        linear-gradient(black,black),
+        url("bg3.jpg");
+    background-blend-mode: saturation;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card p:hover {
+    background-blend-mode: screen;
+    filter: none;
+    opacity: 100%;
+    flex: 4;
+  }
+
+  .card p span {
+    filter: none;
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    color: #eeeeee;
+    letter-spacing: .1em;
+  }
+
+  .card p:hover span {
+    transform: rotate(0);
+  }
